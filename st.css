@@ -1,0 +1,86 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 0px solid crimson;
+}
+
+:root{
+  --body-bg-color: rgba(75,75,75);
+  --card-font-color: white;
+  --card-top-bg-color: rgba(8, 95, 110, 0.5);
+  --card-bottom-bg-color: rgba(25, 184, 86, 0.5);
+}
+
+body{
+  background-color: var(--body-bg-color);
+}
+
+.card{
+  max-width: 400px;
+  min-width: 300px;
+  margin: 50px auto; 
+}
+
+.cardTop{
+  border: 2px solid var(--card-font-color);
+  background-color: var(--card-top-bg-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  color: var(--card-font-color);
+}
+
+.cardHead{
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger;
+  text-decoration: underline;
+}
+
+.cardInputCont{
+  background-color: crimson;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cardInputCont li{ 
+  list-style: none;
+  flex-grow: 1;
+}
+
+.cardNumInput input[type="number"]{
+  width: 100%;
+  padding: 10px 20px;
+  -moz-appearance: textarea;
+}
+
+.cardBtn input[type="submit"]{
+  width: 100%;
+  padding: 10px 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.cardBottom{
+  display: none;
+  padding: 20px;
+  background-color: var(--card-font-color);
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.outputWrong{
+  color: red;
+}
+
+.outputRight{
+  color: green;
+}
+

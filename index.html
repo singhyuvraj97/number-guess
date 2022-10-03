@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>guess</title>
+    <link rel="stylesheet" type="text/css" href="./st.css" />
+  </head>
+  <body>
+    <main class="card">
+      <section class="cardTop cardBox">
+        <h2 class="cardHead">number guess</h2>
+        <h4>
+          guess number between <span class="minGuess"></span> and <span class="maxGuess"></span>
+        </h4>
+        <ul class="cardInputCont">
+          <li class="cardNumInput"><input type="number" max="10" min="1" /></li>
+          <li class="cardBtn"><input type="submit" value="GUESS" /></li>
+        </ul>
+      </section>
+      <section class="cardBottom cardBox">
+        <p class="cardOutputCont"></p>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
